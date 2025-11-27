@@ -1,6 +1,5 @@
 import 'package:assignment_two_flutter/screens/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:assignment_two_flutter/screens/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
