@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:assignment_two_flutter/widgets/action_button.dart';
-import 'package:assignment_two_flutter/widgets/balance_card.dart';
+import 'package:assignment_two_flutter/widgets/transaction_tile.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -141,9 +141,106 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+
+            const SizedBox(
+                height: 30),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: const[
+                ActionButton(icon: Icons.swap_horiz, label: 'Transfer'),
+                ActionButton(icon: Icons.warning_amber, label: 'Pay Bills'),
+                ActionButton(icon: Icons.link, label: 'Invest'),
+              ],
+            ),
+
+
+
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text('Recent Transaction',
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold),
+                ),
+                TextButton(onPressed:(){} ,
+                    child: const Text('View all',
+                      style: TextStyle(
+                        color: primaryPurple),
+                    ),
+                ),
+              ],
+            ),
+
+            const SizedBox(height: 10),
+
+           TransactionTile(
+               icon: Icons.local_movies,
+               title: 'Netflix Subscription',
+               category: 'Entertainment • Today',
+               amount: '-\$19.99',
+               color: Colors.red),
+
+            TransactionTile(
+                icon: Icons.coffee,
+                title: 'Coffee Shop',
+                category: 'Food & Drink • Today',
+                amount: '-\$4.50',
+                color: Colors.red),
+
+            TransactionTile(
+                icon: Icons.account_balance_wallet,
+                title: 'Salary Deposit', category:'Income • Yesterday',
+                amount: '+\$3500.00',
+                color: Colors.green),
+
+            TransactionTile(
+                icon: Icons.local_grocery_store,
+                title: 'Grocery Store',
+                category: 'Shopping • Yesterday',
+                amount: '-\$55.00',
+                color: Colors.red),
+
+            TransactionTile(
+                icon: Icons.shopping_bag,
+                title: 'Amazon Purchase',
+                category: 'Shopping • 2 days ago',
+                amount: '-\$120.75',
+                color: Colors.red)
           ],
         ),
       ),
+      ),
+
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _currentIndex,
+        selectedItemColor: primaryPurple,
+        unselectedItemColor: Colors.grey,
+        onTap: (index) {
+          setState(() {
+            _currentIndex = index;
+          });
+        },
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_outlined),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.bar_chart_outlined),
+            label: 'Reports',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.credit_card_outlined),
+            label: 'Cards',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person_outline),
+            label: 'Profile',
+          ),
+        ],
       ),
     );
   }
