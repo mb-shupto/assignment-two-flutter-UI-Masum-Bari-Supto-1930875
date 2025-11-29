@@ -27,6 +27,15 @@ class ReportPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+  
+            Padding(padding: EdgeInsets.all(5)),
+            const Text("Monthly Spending Report",
+              style: TextStyle(
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+                color: Colors.black87,
+              ),
+            ),
 
             const SizedBox(height: 10),
             
@@ -35,7 +44,7 @@ class ReportPage extends StatelessWidget {
               padding: const EdgeInsets.all(24),
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(15),
                 boxShadow: [
                   BoxShadow(
                   color: Colors.grey.withOpacity(0.1),
@@ -97,7 +106,7 @@ class ReportPage extends StatelessWidget {
             CategoryBar(label: "Shopping", amount: "\$320.00", percentage: 0.25, color: Colors.deepPurpleAccent),
             CategoryBar(label: 'Housing', amount: "\$280.00", percentage: 0.22, color: CupertinoColors.systemYellow),
             CategoryBar(label: 'Transport', amount: '\$150.00', percentage: 0.22, color: CupertinoColors.systemGreen),
-            CategoryBar(label: 'Other', amount: '\$70.00', percentage: 0.06, color: CupertinoColors.systemGrey),
+            CategoryBar(label: 'Other', amount: '\$70.00', percentage: 0.06, color: Colors.grey),
 
           ],
         ),
