@@ -1,4 +1,6 @@
+import 'package:assignment_two_flutter/screens/home_page.dart';
 import 'package:assignment_two_flutter/screens/main_screen.dart';
+import 'package:assignment_two_flutter/screens/report_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
