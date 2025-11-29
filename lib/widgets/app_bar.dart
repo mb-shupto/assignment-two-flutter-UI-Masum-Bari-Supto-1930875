@@ -43,7 +43,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                 style: TextStyle(color: Colors.grey, fontSize: 15),
               ),
               Text(
-                'STUDENT NAME',
+                'Masum-Ul-Bari Supto',
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 20,

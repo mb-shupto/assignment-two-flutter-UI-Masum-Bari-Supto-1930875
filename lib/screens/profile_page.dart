@@ -10,12 +10,12 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
-  int _currentIndex = 3;
+  int currentIndex = 3;
   static const Color primaryPurple = Color(0xFF5B46EB);
 
-  static const String name = "STUDENT NAME (YOUR NAME HERE)";
-  static const String studentID = "S12345 (YOUR ID HERE)";
-  static const String email = "student.name@iub.edu (YOUR IUB EMAIL HERE)";
+  static const String name = "MD. MASUM-UL-BARI SUPTO";
+  static const String studentID = "1930875";
+  static const String email = "1930875@iub.edu.bd";
   static const String mainBio =
       "I'm currently focusing on my final year, balancing studies "
       "with building side projects. I believe financial health is key to academic success. "
@@ -51,7 +51,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 radius: 60,
                 backgroundColor: const Color(0xFF5B46EB),
                 child: const Text(
-                  "SN",
+                  "MB",
                   style: TextStyle(
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
