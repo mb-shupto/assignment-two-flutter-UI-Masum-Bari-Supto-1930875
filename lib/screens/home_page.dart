@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:assignment_two_flutter/widgets/action_button.dart';
 import 'package:assignment_two_flutter/widgets/transaction_tile.dart';
 import 'package:assignment_two_flutter/widgets/app_bar.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -131,7 +132,7 @@ class _HomePageState extends State<HomePage> {
               ),
 
               TransactionTile(
-                icon: Icons.account_balance_wallet,
+                icon: FontAwesomeIcons.sackDollar,
                 title: 'Salary Deposit',
                 category: 'Income • Yesterday',
                 amount: '+\$3500.00',
@@ -147,7 +148,7 @@ class _HomePageState extends State<HomePage> {
               ),
 
               TransactionTile(
-                icon: Icons.shopping_bag,
+                icon: Icons.local_grocery_store,
                 title: 'Amazon Purchase',
                 category: 'Shopping • 2 days ago',
                 amount: '-\$120.75',

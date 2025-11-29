@@ -11,7 +11,7 @@ dependencies:
     sdk: flutter
 
   percent_indicator: ^4.2.3
-
+  font_awesome_flutter: ^10.0.0
 
 
 
