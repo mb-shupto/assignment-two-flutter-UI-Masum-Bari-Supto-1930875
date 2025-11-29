@@ -1,5 +1,6 @@
 import 'package:assignment_two_flutter/screens/home_page.dart';
 import 'package:assignment_two_flutter/screens/profile_page.dart';
+import 'package:assignment_two_flutter/screens/report_page.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
@@ -15,6 +16,7 @@ class _MainScreenState extends State<MainScreen> {
 
   static const List<Widget> _pages = [
     HomePage(),
+    ReportPage(),
     ProfilePage()
   ];
 
@@ -44,6 +46,10 @@ class _MainScreenState extends State<MainScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.auto_graph),
+              label: 'Reports'
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
