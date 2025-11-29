@@ -1,3 +1,4 @@
+import 'package:assignment_two_flutter/screens/cards_page.dart';
 import 'package:assignment_two_flutter/screens/home_page.dart';
 import 'package:assignment_two_flutter/screens/profile_page.dart';
 import 'package:assignment_two_flutter/screens/report_page.dart';
@@ -17,6 +18,7 @@ class _MainScreenState extends State<MainScreen> {
   static const List<Widget> _pages = [
     HomePage(),
     ReportPage(),
+    MyCards(),
     ProfilePage()
   ];
 
@@ -51,6 +53,12 @@ class _MainScreenState extends State<MainScreen> {
               icon: Icon(Icons.auto_graph),
               label: 'Reports'
           ),
+
+          BottomNavigationBarItem(
+            icon: Icon(Icons.credit_card),
+            label: 'Cards',
+          ),
+
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: 'Profile',
